@@ -28,6 +28,11 @@ public class GameManager : MonoBehaviour
         canPlay = false;
     }
 
+    public void GameEnd()
+    {
+        Time.timeScale = 0;
+    }
+
     public void GameStart()
     {
         scoreText.SetActive(true);
