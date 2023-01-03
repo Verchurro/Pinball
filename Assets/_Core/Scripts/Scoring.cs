@@ -14,9 +14,8 @@ public class Scoring : MonoBehaviour
         scoreText.text = score.ToString() + "POINTS";
     }
 
-    // Update is called once per frame
-    void Update()
+    public void AddPoint()
     {
-
+       
     }
 }

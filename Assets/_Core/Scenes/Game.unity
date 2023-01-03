@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ball
       objectReference: {fileID: 0}
+    - target: {fileID: 4167001325213928965, guid: 98771ae163801444c9c9d247b386f674, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 4167001325213928970, guid: 98771ae163801444c9c9d247b386f674, type: 3}
       propertyPath: m_RootOrder
       value: 1
