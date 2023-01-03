@@ -6,14 +6,12 @@ using UnityEngine.UI;
 
 public class Scoring : MonoBehaviour
 {
-   [SerializeField] public TextMeshProUGUI scoreText;
-    public Text highScoreText;
+   public TextMeshProUGUI scoreText;
+    
     int score = 0;
-    int highScore = 0;
     void Start()
     {
-        scoreText.text = score.ToString() + "SCORE";
-        highScoreText.text = "HIGHSCORE" + highScore.ToString();
+        scoreText.text = score.ToString() + "POINTS";
     }
 
     // Update is called once per frame
