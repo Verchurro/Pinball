@@ -12,10 +12,11 @@ public class Ball : MonoBehaviour
         {
             case "Lose": GameManager.Instance.GameEnd();
                 break;
-            case "Bumper": break ;
-            case "Tunnel": 
+            case "Bumper": GameManager.Instance.UpdateScore(10, 1);
+                break ;
+            case "Tunnel": GameManager.Instance.UpdateScore(20, 1);
                 break;
-            case "Flipper":
+            case "Flipper": GameManager.Instance.multiplier = 1;
                 break;
         }
     }

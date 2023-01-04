@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -37,6 +38,13 @@ public class GameManager : MonoBehaviour
     {
         scoreText.SetActive(true);
         Instantiate(ball,startpPos,Quaternion.identity);
+    }
+
+    public void UpdateScore(int point, int mullIncrease)
+    {
+        multiplier += mullIncrease;
+        score += point * multiplier;
+        scoreText.GetComponent<Text>().text = "Score: " + score;
     }
 
 }
